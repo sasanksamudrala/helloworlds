@@ -14,3 +14,4 @@ mvc-dispatcher-servlet.xml
 
 mvn tomcat7:run
 http://localhost:8081/helloworlds/helloWorld/displayMessage/Have%20a%20nice%20Day!
+http://localhost:8081/helloworlds/
