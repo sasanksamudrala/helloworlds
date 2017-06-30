@@ -1,0 +1,119 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.scalable.diff</groupId>
+  <artifactId>helloworlds</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>helloworlds Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+		<spring.version>4.0.2.RELEASE</spring.version>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+  </dependencies>
+  
+ 
+  
+  <build>
+  	<finalName>helloworlds</finalName>
+  	
+        <pluginManagement>
+            <plugins>
+			
+				<plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                    <configuration>
+                        <port>8081</port>
+						<!-- <additionalConfigFilesDir>${basedir}/target/config-src/development</additionalConfigFilesDir>
+						 -->
+						<!--<contextFile>${project.basedir}\src\tomcat7-maven-plugin\resources\context.xml</contextFile>-->
+						<!-- <contextFile>C:/Sasank/Workspace/delete/bermpack1/context.xml</contextFile> -->
+						<!--http://tomcat.apache.org/maven-plugin-2.2/tomcat7-maven-plugin/run-mojo.html#tomcatUsers-->
+						<!-- <tomcatUsers>C:/Sasank/Workspace/delete/bermpack1/tomcat-users.xml</tomcatUsers> -->
+						<!--<tomcatLoggingFile>C:/Sasank/Workspace/delete/bermpack1/</tomcatLoggingFile>-->
+						
+                        <systemProperties>
+                            <serverId>localhost</serverId>
+                        </systemProperties>
+                    </configuration>
+					<!-- <dependencies>
+							<dependency>
+								<groupId>com.oracle</groupId>
+								<artifactId>ojdbc6</artifactId>
+								<type>jar</type>
+								<version>11.2.0.3</version>
+								<artifactId>ojdbc14</artifactId> OJDBC14 is older version developed for JVM 1.4
+								<version>5.0.8</version>
+							</dependency>
+							
+							<dependency>
+								<groupId>javax.jms</groupId>
+								<artifactId>jms</artifactId>
+								<version>7.1.0.0</version>
+								<scope>provided</scope>
+							</dependency>
+							<dependency>
+								<groupId>com.ibm.mq</groupId>
+								<artifactId>com-ibm-mq</artifactId>
+								<version>6.0.2.12</version>
+								<scope>provided</scope>
+							</dependency>
+							<dependency>
+								<groupId>com.ibm</groupId>
+								<artifactId>com.ibm.mqjms</artifactId>
+								<version>6.0.0.0</version>
+								<scope>provided</scope>
+							</dependency>
+							<dependency>
+								<groupId>com.ibm.mq</groupId>
+								<artifactId>dhbcore</artifactId>
+								<version>530.7</version>
+								<scope>provided</scope>
+							</dependency>
+							<dependency>
+								<groupId>com.ibm.mq</groupId>
+								<artifactId>com.ibm.mq.jmqi</artifactId>
+								<version>8.0.0.4</version>
+								<scope>provided</scope>
+							</dependency>
+							<dependency>
+								<groupId>javax.resource</groupId>
+								<artifactId>connector</artifactId>
+								<version>1.0</version>
+							</dependency>
+							
+							<dependency>
+								<groupId>javax.transaction</groupId>
+								<artifactId>transaction-api</artifactId>
+								<version>1.1-rev-1</version>
+							</dependency>
+					</dependencies> -->
+                </plugin>
+				
+			</plugins>
+        </pluginManagement>
+		
+	</build>
+	
+</project>
