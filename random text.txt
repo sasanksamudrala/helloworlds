@@ -1,3 +1,4 @@
+New->maven project->maven-archetype-webapp:
 pom.xml
 
 HelloWorldController.java
@@ -6,4 +7,10 @@ helloWorld.jsp
 web.xml
 mvc-dispatcher-servlet.xml
 
+
+
+
+
+
+mvn tomcat7:run
 http://localhost:8081/helloworlds/helloWorld/displayMessage/Have%20a%20nice%20Day!
